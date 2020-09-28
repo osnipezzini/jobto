@@ -16,6 +16,7 @@
     <Company>SOTech Development</Company>
     <Version>1.0.0</Version>
     <ApplicationIcon>icon_job.ico</ApplicationIcon>
+    <UserSecretsId>bd494609-9d0d-462e-ae02-10f0ecb220c0</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

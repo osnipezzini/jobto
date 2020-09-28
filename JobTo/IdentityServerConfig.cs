@@ -14,9 +14,9 @@ namespace JobTo
 {
     public class IdentityServerConfig
     {
-        public const string ApiName = "quickapp_api";
+        public const string ApiName = "jobto_api";
         public const string ApiFriendlyName = "JobTo API";
-        public const string QuickAppClientID = "quickapp_spa";
+        public const string JobToClientID = "jobto_spa";
         public const string SwaggerClientID = "swaggerui";
 
         // Identity resources (used by UserInfo endpoint).
@@ -58,7 +58,7 @@ namespace JobTo
                 // http://docs.identityserver.io/en/release/reference/client.html.
                 new Client
                 {
-                    ClientId = IdentityServerConfig.QuickAppClientID,
+                    ClientId = IdentityServerConfig.JobToClientID,
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword, // Resource Owner Password Credential grant.
                     AllowAccessTokensViaBrowser = true,
                     RequireClientSecret = false, // This client does not need a secret to request tokens from the token endpoint.

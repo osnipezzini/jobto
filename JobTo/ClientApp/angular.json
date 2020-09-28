@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "quickapp": {
+    "jobto": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -74,18 +74,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "quickapp:build"
+            "browserTarget": "jobto:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "quickapp:build:production"
+              "browserTarget": "jobto:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "quickapp:build"
+            "browserTarget": "jobto:build"
           }
         },
         "test": {
@@ -121,16 +121,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "quickapp:serve"
+            "devServerTarget": "jobto:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "quickapp:serve:production"
+              "devServerTarget": "jobto:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "quickapp"
+  "defaultProject": "jobto"
 }
