@@ -10,11 +10,22 @@
 
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
-    <Description>ASPNET Core 3.0 - Angular8 startup template for Quick Application Development</Description>
-    <Copyright>Copyright © 2019 www.ebenmonney.com</Copyright>
-    <PackageProjectUrl>https://www.ebenmonney.com/quickapp</PackageProjectUrl>
-    <Company>EBENMONNEY</Company>
-    <Version>3.0.0</Version>
+    <Description>JobTo - Ticket Management System</Description>
+    <Copyright>Copyright © 2020 SOTech Development</Copyright>
+    <PackageProjectUrl>https://www.github.com/osnipezzini/jobto</PackageProjectUrl>
+    <Company>SOTech Development</Company>
+    <Version>1.0.0</Version>
+    <ApplicationIcon>icon_job.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Debug</OutputPath>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\Release</OutputPath>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
