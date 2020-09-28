@@ -3,17 +3,14 @@
 // www.ebenmonney.com/templates
 // =============================
 
+using DAL.Core;
+using DAL.Core.Interfaces;
 using DAL.Models;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using DAL.Core;
-using DAL.Core.Interfaces;
 
 namespace DAL
 {
@@ -52,8 +49,8 @@ namespace DAL
                 await EnsureRoleAsync(adminRoleName, "Default administrator", ApplicationPermissions.GetAllPermissionValues());
                 await EnsureRoleAsync(userRoleName, "Default user", new string[] { });
 
-                await CreateUserAsync("admin", "tempP@ss123", "Inbuilt Administrator", "admin@ebenmonney.com", "+1 (123) 000-0000", new string[] { adminRoleName });
-                await CreateUserAsync("user", "tempP@ss123", "Inbuilt Standard User", "user@ebenmonney.com", "+1 (123) 000-0001", new string[] { userRoleName });
+                await CreateUserAsync("admin", "Admin@123", "Inbuilt Administrator", "admin@jobto.com", "+1 (123) 000-0000", new string[] { adminRoleName });
+                await CreateUserAsync("user", "UserP@123", "Inbuilt Standard User", "user@jobto.com", "+1 (123) 000-0001", new string[] { userRoleName });
 
                 _logger.LogInformation("Inbuilt account generation completed");
             }
@@ -66,9 +63,11 @@ namespace DAL
 
                 Customer cust_1 = new Customer
                 {
-                    Name = "Ebenezer Monney",
-                    Email = "contact@ebenmonney.com",
+                    Name = "Osni Pezzini Junior",
+                    Email = "contact@jobto.com",
                     Gender = Gender.Male,
+                    Address = "4482 Koontz Lane",
+                    City = "Los Angeles",
                     DateCreated = DateTime.UtcNow,
                     DateModified = DateTime.UtcNow
                 };
